@@ -46,15 +46,9 @@ notification:
     # 如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
     time_range:
       start: "00:00"  # 每日7点开始准备推送
-      end: "23:59"    # 8:30前完成推送，不影响开盘前决策
+      end: "23:30"    # 8:30前完成推送，不影响开盘前决策
     once_per_day: false  # 每天在时间窗口内只推送一次，如果 false，则窗口内每次执行都推送
     push_record_retention_days: 7  # 推送记录保留天数
-    # 定时任务配置（控制具体执行时间）
-schedule:
-  - cron: "30 7 * * *"  # 周一至周五 7:30 执行（早间推送）
-    mode: "daily"
-  - cron: "30 19 * * *"  # 每天 19:30 执行（晚间推送）
-    mode: "daily"
 
   # 请务必妥善保管好 webhooks，不要公开
   # 如果你以 fork 的方式将本项目部署在 GitHub 上，请勿在此填写任何 webhooks，而是将 webhooks 填入 GitHub Secret
