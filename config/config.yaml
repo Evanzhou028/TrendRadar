@@ -88,3 +88,5 @@ platforms:
     name: "财联社热门"
   - id: "ifeng"
     name: "凤凰网"
+  - id: "xueqiu" 
+    name: "雪球热搜" 
