@@ -89,4 +89,6 @@ platforms:
   - id: "ifeng"
     name: "凤凰网"
   - id: "xueqiu" 
-    name: "雪球热搜" 
+    name: "雪球热搜"
+  - id: "tgb" 
+    name: "人气热股"
